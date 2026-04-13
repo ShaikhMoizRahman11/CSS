@@ -1,0 +1,24 @@
+/* CSS Casding style sheet  */
+
+
+h3{
+    color: blue;
+}
+
+
+
+
+
+
+h4{
+    color:rgb(25, 21, 92);
+}
+h5{
+    color:#ff7f50;
+}
+h6{
+    color: hsl(5, 20%, 35%);
+}
+p{
+    color: rgb(229, 168, 115);
+}

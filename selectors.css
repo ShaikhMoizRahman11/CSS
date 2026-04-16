@@ -1,0 +1,66 @@
+/* simple selectors */
+/* Universal selector */
+/* *{
+    color: chocolate;
+    background-color: blueviolet;
+} */
+
+
+/* tag selectors
+h1{
+    color: brown;
+}
+
+h2{
+    color: cadetblue;
+    background-color:blue;
+}
+
+/* class selector */
+
+/* .main{
+    color: red;
+} */
+
+/* id selector */
+/* #fix{
+    color: chartreuse;
+} */ 
+
+/* group selectors */
+/* h1,h2,p{
+    color: aqua;
+} */
+
+/* p.para{
+    color:burlywood;
+}
+
+p#para1{
+    color: cornflowerblue;
+} */
+
+/* Combinator Selectors */
+/* 1.Descendent Combinator */
+/* div p{
+    color: darkgoldenrod;
+}
+
+div h1{
+    color: crimson;
+} */
+
+/* Child Combinator */
+/* div > p{
+    color: chartreuse;
+} */
+
+/* Next Sibling Combinator */
+/* h1+p{
+    color: darkcyan;
+} */
+
+/* Subsequent Sibling Combinator */
+h1~p{
+    color: darkgreen;
+}

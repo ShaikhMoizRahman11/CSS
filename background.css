@@ -1,0 +1,42 @@
+h1{
+    background-color: aquamarine;
+    /* background-image: url('https://www.fabhotels.com/blog/wp-content/uploads/2019/02/Qutub-Minar.jpg'); */
+}
+b{
+    background-color: blue;
+}
+ body{ 
+    background-image: url('https://www.fabhotels.com/blog/wp-content/uploads/2018/07/Taj-Mahal.jpg');
+    background-repeat: no-repeat;
+    opacity: 0;
+    /* background-size: 300px 500px; */
+    /* background-size: widht height */
+    /* background-size: cover; */
+    /* background-size: contain; */
+    /* background-position: center; */
+    /* background-position: left; */
+    /* background-position: right;*/
+    /* background-position: bottom; */
+    /* background-repeat: repeat-x;
+    background-repeat: repeat-y; */
+/* 
+    background-position-x: center; */
+    /* background-position-x: 100px ; */
+    /* background-position-y:center; */
+    /* background-position-y: bottom; */
+    /* background-position-y: top; */
+    /* background-position: 100px 200px; }*/
+ /* p{
+    background-color: brown;
+    opacity: 1;
+    color: aliceblue;
+    /* background-image: url('https://www.mistay.in/travel-blog/content/images/2020/07/travel-4813658_1920.jpg'); */}
+
+
+img{
+    /* opacity means transparency
+    it always starts from 0 ends on 1
+    0 : total light(invisible)
+    1: total dark */
+    opacity: 0;
+}

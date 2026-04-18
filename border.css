@@ -1,0 +1,125 @@
+/* =========================================
+   CSS BOX MODEL 
+   -----------------------------------------
+   The box model has 4 parts:
+   1. Content  -> actual text/image area
+   2. Padding  -> space inside the box, around content
+   3. Border   -> line around padding/content
+   4. Margin   -> space outside the box
+   ========================================= */
+
+
+/* -----------------------------------------
+   General page styling
+   ----------------------------------------- */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+
+/* -----------------------------------------
+   Example box to understand box model
+   ----------------------------------------- */
+.box {
+  /* CONTENT AREA */
+  width: 250px;              /* Width of content only (default box model) */
+  height: 120px;             /* Height of content area */
+
+  /* BACKGROUND */
+  background-color: lightblue; /* Background fills content + padding area */
+
+  /* PADDING = space inside box */
+  padding: 20px;             /* 20px on all 4 sides inside the box */
+
+  /* BORDER = line around padding */
+  border: 5px solid navy;    /* thickness, style, color */
+
+  /* MARGIN = space outside the box */
+  margin: 30px;              /* 30px gap outside the element */
+
+  /* Optional text style */
+  color: black;
+  font-size: 18px;
+}
+
+
+/* -----------------------------------------
+   Different padding example
+   top right bottom left
+   ----------------------------------------- */
+.padding-demo {
+  width: 200px;
+  background-color: lightgreen;
+  border: 3px solid green;
+
+  /* padding: top right bottom left */
+  padding: 10px 20px 30px 40px;
+
+  margin: 20px;
+}
+
+
+/* -----------------------------------------
+   Different margin example
+   top right bottom left
+   ----------------------------------------- */
+.margin-demo {
+  width: 200px;
+  background-color: lightcoral;
+  border: 3px solid darkred;
+  padding: 15px;
+
+  /* margin: top right bottom left */
+  margin: 10px 30px 20px 40px;
+}
+
+
+/* -----------------------------------------
+   Border-box example
+   Normally width applies only to content.
+   With box-sizing: border-box,
+   width includes padding + border too.
+   ----------------------------------------- */
+.border-box-demo {
+  width: 250px;
+  padding: 20px;
+  border: 5px solid black;
+  background-color: lightyellow;
+  margin: 20px;
+
+  /* Very important property in modern CSS */
+  box-sizing: border-box;
+}
+
+
+/* -----------------------------------------
+   Circle example to show padding/border/margin
+   ----------------------------------------- */
+.circle-box {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  padding: 20px;
+  border: 4px solid brown;
+  margin: 25px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+
+/* -----------------------------------------
+   Notes:
+   If box-sizing is NOT used:
+   total width = width + left/right padding + left/right border
+
+   Example for .box:
+   width = 250px
+   padding left + right = 20 + 20 = 40px
+   border left + right = 5 + 5 = 10px
+   total width = 250 + 40 + 10 = 300px
+
+   Margin is extra outside this total width.
+   ----------------------------------------- */

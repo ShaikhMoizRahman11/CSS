@@ -1,6 +1,7 @@
 /* CSS Casding style sheet  */
 h3{
     color: blue;
+   
 }
 /* RGB(Red Green Blue) color property */
 h4{
@@ -17,4 +18,7 @@ h6{
 /* Color picker */
 p{
     color: rgb(119, 74, 36);
+}
+h1{
+ color:brown;
 }

@@ -25,7 +25,7 @@ body {
    ----------------------------------------- */
 .box {
   /* CONTENT AREA */
-  width: 250px;              /* Width of content only (default box model) */
+   width: 250px;            /* Width of content only (default box model) */
   height: 120px;             /* Height of content area */
 
   /* BACKGROUND */
@@ -109,7 +109,29 @@ body {
   text-align: center;
 }
 
+.pad{
+   border: 20px solid black;
+   width: 150px;
+   height: 250px;
+   overflow: scroll;
+   /* overflow: hidden; */
+   /* padding: top right  bottom left; */
+   padding: 25px;
+   margin: 50px 25px 50px 30px;
+   /* margin-top: 20px;
+   margin-bottom: 20px;
+   margin-left: 25px;
+   margin-right: 25px; */
+   /* padding-left: 20px;
+   padding-top: 20px;
+   padding-right: 20px;
+   padding-bottom: 20px; */
 
+}
+/* .mar{
+   padding: 50px;
+   margin: 100px;
+} */
 /* -----------------------------------------
    Notes:
    If box-sizing is NOT used:

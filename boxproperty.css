@@ -27,6 +27,8 @@ p{
 
     /* border: border-width border-style border-color */
     border: 5px solid red;
+    border-style: solid dashed dotted hidden;
+    border-width: 15px 25px 10px 6px;
 }
 
 /* this is a comment 

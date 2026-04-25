@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units Lecture: Absolute vs Relative</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Understanding CSS Units</h1>
+        <p>A guide to Absolute (px) and Relative (%, em, rem, vh, vw) units.</p>
+    </header>
+
+    <main>
+        <section class="unit-section">
+            <h2>1. Absolute Units (px)</h2>
+            <p>Pixels are fixed. They do not change based on user settings.</p>
+            <div class="box box-px">300px Wide Box</div>
+        </section>
+
+        <section class="unit-section">
+            <h2>2. Percentage (%)</h2>
+            <p>Relative to the width of the parent container.</p>
+            <div class="parent-container">
+                <div class="box box-percent">50% of Parent</div>
+            </div>
+        </section>
+
+        <section class="unit-section">
+            <h2>3. Typography Units (em vs rem)</h2>
+            <div class="rem-demo">
+                <strong>REM:</strong> Always looks at the Root (HTML) font size.
+            </div>
+            <div class="parent-font">
+                <div class="em-demo">
+                    <strong>EM:</strong> Looks at its immediate parent's font size.
+                </div>
+            </div>
+        </section>
+
+        <section class="unit-section">
+            <h2>4. Viewport Units (vh / vw)</h2>
+            <p>Relative to the actual browser window size.</p>
+            <div class="box box-vw">50vw (Half the screen width)</div>
+            <div class="box box-vh">20vh (20% of screen height)</div>
+        </section>
+    </main>
+
+</body>
+</html>

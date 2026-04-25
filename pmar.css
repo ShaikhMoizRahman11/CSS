@@ -1,0 +1,50 @@
+/* p{
+    border: 10px solid black;
+    padding: 50px;
+    margin: 50px;
+} */
+
+.para{
+    border: 10px solid black;
+    /* manually adjusting padding on all sides */
+    /* padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px; */
+
+    /* shorthand padding property */
+    padding: 50px;
+    /* padding: padding-top  padding-right  padding-bottom  padding-left */
+    /* padding: 50px 20px 100px 150px; */
+    margin-top: 60px;
+    /* margin-bottom: 75px; */
+}
+
+.mar{
+    border: 10px solid blueviolet;
+    padding: 50px;
+    /* manually adjusting margin on all sides */
+    /* margin-top: 100px;
+    margin-bottom: 550px;
+    margin-right: 65px;
+    margin-left: 57px; */
+    /* Shortand Property of Margin */
+    margin: 50px;
+    /* margin: 100px 65px 25px 75px; */
+    /* border-radius: 25px; */
+/* 
+    border-top-left-radius: 25px;
+    border-top-right-radius: 35px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 25px; */
+
+    /* shorthand border radius property */
+    /* border-radius: 25px 35px 50px 150px; */
+}
+
+.cir{
+    margin: 200px;
+    padding: 20px;
+    border: 5px solid red;
+    border-radius: 50%;
+}

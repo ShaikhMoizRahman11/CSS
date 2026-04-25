@@ -1,0 +1,88 @@
+/* --- ROOT SETTINGS --- */
+html {
+    /* The default font size for most browsers is 16px. 
+       'rem' units will multiply based on this number. */
+    font-size: 16px; 
+    font-family: sans-serif;
+    line-height: 1.6;
+}
+
+body {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #ddd;
+}
+
+.unit-section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.box {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* --- 1. ABSOLUTE: PIXELS (px) --- */
+.box-px {
+    background-color: #e74c3c;
+    width: 300px; /* This will ALWAYS be 300px, even on a tiny phone. */
+}
+
+/* --- 2. RELATIVE: PERCENTAGE (%) --- */
+.parent-container {
+    background: #ecf0f1;
+    width: 100%; /* Spans full width of section */
+    height: 50px;
+}
+
+.box-percent {
+    background-color: #3498db;
+    width: 50%; /* It takes up half of the .parent-container */
+}
+
+/* --- 3. RELATIVE: REM vs EM --- */
+
+/* REM (Root EM) */
+.rem-demo {
+    background: #27ae60;
+    color: white;
+    padding: 1rem;      /* 1 * 16px = 16px */
+    font-size: 1.25rem; /* 1.25 * 16px = 20px */
+    margin-bottom: 10px;
+}
+
+/* EM (Relative to Parent) */
+.parent-font {
+    font-size: 30px; /* We set a large font on the parent */
+}
+
+.em-demo {
+    background: #8e44ad;
+    color: white;
+    /* 1em here will equal 30px because it inherits from .parent-font */
+    padding: 1em; 
+    font-size: 0.5em; /* This will be 15px (half of 30px) */
+}
+
+/* --- 4. VIEWPORT UNITS (vw/vh) --- */
+
+.box-vw {
+    background-color: #f39c12;
+    width: 50vw; /* 50% of the browser's width. Resize the window to see it change! */
+}
+
+.box-vh {
+    background-color: #2c3e50;
+    height: 10vh; /* Exactly 10% of the screen height */
+    width: 200px;
+}

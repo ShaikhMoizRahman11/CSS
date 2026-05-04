@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout Live Demo</title>
+    <link rel="stylesheet" href="display.css">
+</head>
+<body>
+
+    <h1>CSS Display & Positioning Live Demo</h1>
+
+    <section class="demo-section">
+        <h2>1. The Display Property</h2>
+        <p>Watch how these elements interact with their neighbors.</p>
+        
+        <div class="container">
+            <div class="box block-box">Block Element (Div)</div>
+            <div class="box block-box">Another Block Element</div>
+            
+            <span class="box inline-box">Inline Span 1</span>
+            <span class="box inline-box">Inline Span 2</span>
+            
+            <div class="box inline-block-box">Inline-Block</div>
+            <div class="box inline-block-box">Inline-Block</div>
+        </div>
+    </section>
+
+    <section class="demo-section">
+        <h2>2. The Position Property</h2>
+        <p>Notice how the "Absolute" box ignores the others, while "Relative" leaves a gap.</p>
+        
+        <div class="container parent-container">
+            <div class="box static-box">Static (Normal)</div>
+            <div class="box relative-box">Relative (Moved 20px)</div>
+            <div class="box absolute-box">Absolute (Bottom-Right)</div>
+            <div class="box static-box">Static (Normal)</div>
+        </div>
+    </section>
+
+    <div class="sticky-box">I am Sticky! (Scroll down)</div>
+
+    <div style="height: 1000px; padding: 20px;">
+        <p>Scroll down to see the Sticky and Fixed elements in action...</p>
+    </div>
+
+    <div class="fixed-box">Fixed (Always Here)</div>
+
+</body>
+</html>

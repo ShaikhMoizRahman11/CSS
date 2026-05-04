@@ -1,0 +1,31 @@
+.out{
+    border: 5px solid black;
+
+
+    outline-style: double;
+    outline-width: 15px;
+    outline-color:blue;
+    outline-offset: 25px;
+
+
+
+    width: 550px;
+    margin: 100px;
+}
+
+.out1{
+    width: 550px;
+    margin: 100px;
+
+    /* outline-width: 15px; */
+    /* outline-color: red; */
+    /* outline-style: dashed; */
+    /* outline-style: dotted; */
+    /* outline-style: double; */ 
+
+    /* outline:15px dashed greenyellow ; */
+    outline: 15px brown double;
+
+    border: 5px solid black;
+    border-radius: 25px;
+}

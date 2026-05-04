@@ -1,0 +1,95 @@
+/* General Styling for visibility */
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.demo-section {
+    background: white;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.container {
+    border: 2px dashed #ccc;
+    padding: 10px;
+    background: #fafafa;
+}
+
+.box {
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 4px;
+}
+
+/* --- DISPLAY PROPERTIES --- */
+
+.block-box {
+    display: block; /* Forces a new line and full width */
+    background-color: #3498db;
+    margin-bottom: 10px;
+}
+
+.inline-box {
+    display: inline; /* Only takes width of content. Width/Height ignored. */
+    background-color: #2ecc71;
+    padding: 5px; /* Note: Vertical padding doesn't affect surrounding lines well */
+}
+
+.inline-block-box {
+    display: inline-block; /* Sits in a row but respects Width/Height */
+    background-color: #9b59b6;
+    width: 120px;
+    height: 60px;
+}
+
+/* --- POSITIONING PROPERTIES --- */
+
+.parent-container {
+    position: relative; /* Acts as the "Anchor" for the Absolute child */
+    height: 250px;
+}
+
+.static-box {
+    position: static; /* Default: follows the natural flow */
+    background-color: #7f8c8d;
+}
+
+.relative-box {
+    position: relative;
+    top: 20px; /* Moves 20px down from original spot */
+    left: 20px; /* Moves 20px right from original spot */
+    background-color: #f1c40f;
+}
+
+.absolute-box {
+    position: absolute;
+    bottom: 10px; /* 10px from the bottom of the parent */
+    right: 10px;  /* 10px from the right of the parent */
+    background-color: #e74c3c;
+    width: 100px;
+}
+
+.fixed-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2c3e50;
+    padding: 15px;
+    border: 2px solid white;
+    /* This stays in the corner even if you scroll the page */
+}
+
+.sticky-box {
+    position: sticky;
+    top: 0; /* Sticks to the top when you scroll past it */
+    background-color: #d35400;
+    padding: 10px;
+    z-index: 100;
+}

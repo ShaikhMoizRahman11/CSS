@@ -1,0 +1,66 @@
+h1{
+    color:black;
+    text-align: center;
+    text-shadow: 0px 0px 15px red,0px 0px 15px greenyellow;
+}
+.rig{
+    /* text-align: right; */
+    /* text-align: center; */
+    /* text-indent: 50px; */
+    /* letter-spacing: 5px; */
+    /* line-height: 2.5; */
+    border: 2px solid black;
+}
+.lef{
+    /* text-align: left; */
+    /* text-align: justify; */
+    word-spacing: 10px;
+}
+
+
+
+
+
+h2{
+    text-decoration: overline;
+    text-decoration-style: wavy;
+    text-decoration-color: aqua;
+    text-decoration-thickness: 2px;
+}
+.he1{
+    /* text-decoration: underline;
+    text-decoration-color: blue;
+    text-decoration-thickness: 5px; */
+    text-transform: capitalize;
+}
+.he2{
+    /* text-decoration: line-through;
+    text-decoration-style: dotted; */
+    /* text-decoration-color: crimson;
+    text-decoration-thickness: 5px; */
+    text-transform: lowercase;
+}
+.he3{
+    /* text-decoration: overline underline ;
+    text-decoration-style: wavy;
+    text-decoration-color: brown;
+    text-decoration-thickness: 5px; */
+    text-transform: uppercase;
+}
+.he4{
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-decoration-color: burlywood;
+    text-decoration-thickness: 5px;
+}
+.he5{
+    text-decoration-line: overline;
+    text-decoration-style: double;
+    text-decoration-color: chocolate;
+    text-decoration-thickness:12%;
+}
+.shrth{
+    /* text-decoration: t-d-line  t-d-color  t-d-style  t-d-thickness */
+    text-decoration:underline royalblue wavy 2px;
+}
+

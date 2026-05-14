@@ -1,0 +1,97 @@
+  /* 
+           1. BASE STYLES (Mobile First)
+           We write styles for the smallest screens first. 
+           This is a modern industry standard.
+        */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+            transition: background-color 0.4s ease; /* Smooth color change */
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap; /* Allows cards to wrap to next line */
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            /* Mobile Default: One card takes full width */
+            flex: 1 1 100%; 
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        /* 
+           2. TABLET MEDIA QUERY
+           Triggered when the screen width is 600px or wider.
+        */
+        @media screen and (min-width: 600px) {
+            body {
+                background-color: #e8f4fd; /* Changes to light blue */
+            }
+            .card {
+                /* Two cards per row (roughly 45% width each) */
+                flex: 1 1 45%; 
+                border: 2px solid #3498db;
+            }
+            header h1::after {
+                content: " (Tablet Mode)";
+                font-size: 0.5em;
+                color: #3498db;
+            }
+        }
+
+        /* 
+           3. DESKTOP MEDIA QUERY
+           Triggered when the screen width is 1024px or wider.
+        */
+        @media screen and (min-width: 1024px) {
+            body {
+                background-color: #e8fdf5; /* Changes to light green */
+            }
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            .card {
+                /* Three cards per row */
+                flex: 1 1 30%; 
+                border: 2px solid #27ae60;
+            }
+            header h1::after {
+                content: " (Desktop Mode)";
+                font-size: 0.5em;
+                color: #27ae60;
+            }
+        }
+
+        /* 
+           4. SPECIAL CASE: PRINT
+           This only applies when you try to print the page (Ctrl + P).
+        */
+        @media print {
+            body {
+                background-color: white;
+                color: black;
+            }
+            .card {
+                box-shadow: none;
+                border: 1px solid black;
+            }
+        }
